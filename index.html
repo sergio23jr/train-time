@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-light mb-3">
+                    <div class="card-header">Train schedule</div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="text-center row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2">Name</div>
+                                <div class="col-md-2">Destination</div>
+                                <div class="col-md-2">Frequency (min)</div>
+                                <div class="col-md-2">Next Arrival</div>
+                                <div class="col-md-2">Minutes Away</div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </h5>
+                        <!-- start here -->
+                        <ul class=" info list-group list-group-flush">
+
+                        </ul>
+                        <!-- end here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-light mb-3">
+                    <div class="card-header">Enter Your train schedule</div>
+                    <form>
+                        <div class="form-group">
+                            <label>Train Name</label>
+                            <input class="form-control" id="trainName" placeholder="Train Express">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelect1">Destination</label>
+                            <input class="form-control" id="trainDestination" placeholder="Chicago">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelect1">First Train Time (HH:mm military)</label>
+                            <input class="form-control" id="trainTime" type="text" placeholder="24:59">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelect1">Frequency (min)</label>
+                            <input class="form-control" id="trainFreq" type="text" placeholder="60">
+                        </div>
+                        <button id="submitBtn" class="btn btn-primary">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="./train-sch.js"></script>
+</body>
+
+</html>
